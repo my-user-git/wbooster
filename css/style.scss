@@ -82,15 +82,22 @@ input {
 /* header */
 
 .header {
-    position: relative;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    transition: top ease-in-out .5s;
+
+    &__scroll {
+        top: -35px;
+        background: linear-gradient(180deg, #6a32b4 0%, #552693 100%);
+    }
 
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 54px;
-        padding-bottom: 101px;
+        padding-bottom: 20px;
 
         @media (max-width:1300px) {
             flex-direction: column;
@@ -172,6 +179,12 @@ input {
             text-transform: uppercase;
         }
     }
+}
+
+/* main */
+
+.main {
+    padding-top: 81px;
 }
 
 /* hero */

@@ -184,15 +184,21 @@ input {
 
 /* header */
 .header {
-  position: relative;
-  z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  transition: top ease-in-out 0.5s;
+}
+.header__scroll {
+  top: -35px;
+  background: linear-gradient(180deg, #6a32b4 0%, #552693 100%);
 }
 .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 54px;
-  padding-bottom: 101px;
+  padding-bottom: 20px;
 }
 @media (max-width: 1300px) {
   .header__content {
@@ -265,6 +271,11 @@ input {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+/* main */
+.main {
+  padding-top: 81px;
 }
 
 /* hero */

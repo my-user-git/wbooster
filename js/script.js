@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+    let mainNav = document.querySelector('.header');
+
+    window.onscroll = function () {
+        windowScroll();
+    };
+
+    function windowScroll() {
+        mainNav.classList.toggle("header__scroll", mainNav.scrollTop > 50 || document.documentElement.scrollTop > 50);
+    }
+
+
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -8,24 +19,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         breakpoints: {
             480: {
-              slidesPerView: 2,
-              grid: {
-                rows: 3,
-              },
-              spaceBetween: 32,
-              slidesPerGroup: 2
+                slidesPerView: 2,
+                grid: {
+                    rows: 3,
+                },
+                spaceBetween: 32,
+                slidesPerGroup: 2
             },
-        
+
             1024: {
-              slidesPerView: 4,
-              spaceBetween: 15,
+                slidesPerView: 4,
+                spaceBetween: 15,
             },
-        
+
             1300: {
-              slidesPerView: 5,
-              spaceBetween: 18,
+                slidesPerView: 5,
+                spaceBetween: 18,
             },
-          },
+        },
 
         // Navigation arrows
         navigation: {
@@ -34,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    jQuery(document).ready(function($){
+    jQuery(document).ready(function ($) {
         $("#my-accordion").accordionjs();
     });
 })
