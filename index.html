@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script defer src="./js/swiper.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/accordion.css">
+    <script defer src="./js/accordion.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class=" container header__content">
+            <a href="" class="header__logo" title="На главную">
+                <svg class="header__logo-svg">
+                    <use xlink:href="./img/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            Производители
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            Для кого мы работаем
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__tel" tabindex="0">
+                <svg class="header__tel-svg">
+                    <use xlink:href="./img/svg/sprite.svg#tel"></use>
+                </svg>
+                <a class="header__tel-link" href="tel:++78123135845">+7 (812) 313-58-45</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero__content">
+                <h1 class="hero__h1">
+                    Оптовые поставки
+                    <span>электронных компонентов</span>
+                    <span>ИЗ КИТАЯ день в день</span>
+                </h1>
+                <p class="hero__desc">
+                    Комплексные поставки электронных компонентов и оборудования. Подберем аналоги популярных брендов из
+                    Европы в условиях санкций.
+                </p>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <svg class="hero__item-svg">
+                            <use xlink:href="./img/svg/sprite.svg#check"></use>
+                        </svg>
+                        <span>Отсрочка платежей для постоянных клиентов</span>
+                    </li>
+                    <li class="hero__item">
+                        <svg class="hero__item-svg">
+                            <use xlink:href="./img/svg/sprite.svg#check"></use>
+                        </svg>
+                        <span> Бесплатная доставка по Москве и СПБ в течение 2х часов</span>
+                    </li>
+                    <li class="hero__item">
+                        <svg class="hero__item-svg">
+                            <use xlink:href="./img/svg/sprite.svg#check"></use>
+                        </svg>
+                        <span>Квалифицированный персональный менеджер</span>
+                    </li>
+                </ul>
+                <form action="" class="hero-form">
+                    <fieldset class="hero-form__fieldset">
+                        <legend class="hero-form__legend">
+                            Закажите<br>обратный звонок
+                        </legend>
+                        <div class="hero-form__wrap">
+                            <label class="hero-form__label" for="name">Ваше имя<sup>*</sup></label>
+                            <input class="hero-form__input" type="text" name="name" placeholder="Петров Петр">
+                            <label class="hero-form__label" for="tel">Ваш номер<sup>*</sup></label>
+                            <input class="hero-form__input" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+                            <button class="hero-form__button" type="submit">Заказать звонок</button>
+                            <p class="hero-form__privacy">
+                                <svg class="hero-form__svg">
+                                    <use xlink:href="./img/svg/sprite.svg#lock"></use>
+                                </svg>
+                                <span>Мы гарантируем конфиденциальность данных</span>
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="profitably">
+            <div class="container profitably__content">
+                <h2 class="profitably__h2">
+                    Почему с нами выгодно
+                </h2>
+                <p class="profitably__desc">
+                    С 1996 года мы занимаемся оптовыми поставками электронных компонентов от ведущих производителей из
+                    Европы
+                    и Азии для Российских потребителей.
+                </p>
+                <ul class="profitably__list">
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#quality"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Качественная продукция
+                            </h3>
+                            <p class="profitably-article__desc">
+                                Все наши товары сертифицированы и имеют сопроводительную документацию.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#individual"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Индивидуальный подход
+                            </h3>
+                            <p class="profitably-article__desc">
+                                Возможность изготовления компонентов специально для вас
+                                на заводах-изготовителя.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#free-tax"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Бесплатная доставка
+                            </h3>
+                            <p class="profitably-article__desc">
+                                При наличии товара на складе и заказе от 10 000 рублей,
+                                доставим бесплатно по Москве и СПБ в течение 2х часов.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#analog"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Подбираем аналоги
+                            </h3>
+                            <p class="profitably-article__desc">
+                                Поможем подобрать аналоги популярных европейских брендов
+                                в условиях санкций.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#reserve"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Резервный запас компонентов
+                            </h3>
+                            <p class="profitably-article__desc">
+                                Хранение товара на наших складах для постоянных клиентов.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="profitably__item">
+                        <article class="profitably-article">
+                            <svg class="profitably-article__svg">
+                                <use xlink:href="./img/svg/sprite.svg#payment"></use>
+                            </svg>
+                            <h3 class="profitably-article__h3">
+                                Гибкая система оплаты
+                            </h3>
+                            <p class="profitably-article__desc">
+                                Отсрочка платежей для постоянных клиентов.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="manufacturers">
+            <div class="container manufacturers__content">
+                <h2 class="manufacturers__h2">
+                    Наши производители
+                </h2>
+                <div class="swiper-wrap">
+                    <div class="swiper-buttons">
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev">
+                            <svg class="swiper-button-prev__svg">
+                                <use xlink:href="./img/svg/sprite.svg#prev"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg class="swiper-button-next__svg">
+                                <use xlink:href="./img/svg/sprite.svg#next"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/aier.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/foryard.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/fujicon.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/js.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/marquis.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__img" src="./img/foryard.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="manufacturers__desc">
+                    Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id quisque nunc. Non orci
+                    lacus elit mauris velit gravida imperdiet id. Ipsum pulvinar ac ut sociis. Sed magna gravida
+                    consequat
+                    et euismod aenean quis mauris. Ut etiam egestas ultrices faucibus ultrices nisl enim consequat
+                    faucibus.
+                    Nibh id leo ullamcorper eleifend. Id at commodo interdum et leo.
+                </p>
+            </div>
+        </section>
+        <section class="scheme">
+            <div class="container scheme__content">
+                <h2 class="scheme__h2">
+                    Схема работы
+                </h2>
+                <p class="scheme__desc">Lorem ipsum dolor sit amet consectetur. Augue velit in enim sagittis imperdiet
+                    sit mauris. Vitae sit in fusce massa amet.</p>
+                <ol class="scheme__list">
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
+                            </h3>
+                            <p class="scheme-article__desc">
+                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на
+                                сайте.
+                                Также вы можете связаться с нами напрямую.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                МЫ ПРОВЕРЯЕМ НАЛИЧИЕ ПОЗИЦИЙ
+                            </h3>
+                            <p class="scheme-article__desc">
+                                Проверяем наличие на складе,
+                                а также актуальность производства (возможна замена, если необходимо.) Если требуется
+                                замена
+                                - подбираем аналоги и привозим на заказ.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                ФОРМИРУЕМ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+                            </h3>
+                            <p class="scheme-article__desc">
+                                На данном этапе мы с вами согласуем ценовое предложение, обговариваем сроки поставки и
+                                условия оплаты.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                ПРОВОДИМ ОПЛАТУ
+                            </h3>
+                            <p class="scheme-article__desc">
+                                Далее, после получения авансового платежа, мы размещаем заказ.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                МЫ ВЫПОЛНЯЕМ ЗАКАЗ
+                            </h3>
+                            <p class="scheme-article__desc">
+                                Товар поступает на склад в Москву или Санкт-Петербург, где мы сверяем правильность
+                                поставки
+                                и начинаем сборку.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="scheme__item">
+                        <article class="scheme-article">
+                            <h3 class="scheme-article__h3">
+                                ВЫ ПОЛУЧАЕТЕ ТОВАР
+                            </h3>
+                            <p class="scheme-article__desc">
+                                Поставляем вам товар в надлежащей упаковке в сопровождении оригиналов всех необходимых
+                                документов либо вы забираете его самовывозом.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+                <button class="scheme__button" type="submit">Оставить заявку</button>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container questions__content">
+                <h2 class="questions__h2">
+                    Ответы на самые популярные вопросы в сфере
+                </h2>
+                <ul id="my-accordion" class="accordionjs questions__list">
+                    <li class="questions__item">
+                        <h3 class="questions__h3">
+                            Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                        </h3>
+                        <p class="questions__desc">
+                            <span>
+                                Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a
+                                variety
+                                of different medical therapies that utilize stem cells in some form to treat a patient.
+                                Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP)
+                                injections.
+                                The term is also used to refer to stem cell transplants, also known as bone marrow
+                                transplants.
+                            </span>
+                            <span>
+                                Most commonly “stem cell therapy” is used to describe a procedure where the patient’s
+                                adult
+                                stem cells and other potentially regenerative cells are harvested from a tissue sample
+                                of
+                                either fat or bone marrow taken from the patient. These concentrated regenerative cells
+                                are
+                                then used to treat specific injuries typically by injecting them into the afflicted
+                                area. It
+                                should be said that this type of stem cell therapy is currently not FDA approved and
+                                clinics
+                                performing it illegally in the US or in other countries perform various versions of the
+                                procedure to treat illnesses and injuries with little to no clinical evidence.
+                            </span>
+                            <span>
+                                At InGeneron we use the term “regenerative cell therapy” since there are many different
+                                cell
+                                types and regenerative properties collected and used by our therapy along with adult
+                                stem
+                                cells. Importantly we do not treat patients outside of our approved clinical trials and
+                                we
+                                are dedicated to securing FDA approval through rigorous clinical testing.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="questions__item">
+                        <h3 class="questions__h3">
+                            Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                        </h3>
+                        <p class="questions__desc">
+                            <span>
+                                Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a
+                                variety
+                                of different medical therapies that utilize stem cells in some form to treat a patient.
+                                Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP)
+                                injections.
+                                The term is also used to refer to stem cell transplants, also known as bone marrow
+                                transplants.
+                            </span>
+                            <span>
+                                Most commonly “stem cell therapy” is used to describe a procedure where the patient’s
+                                adult
+                                stem cells and other potentially regenerative cells are harvested from a tissue sample
+                                of
+                                either fat or bone marrow taken from the patient. These concentrated regenerative cells
+                                are
+                                then used to treat specific injuries typically by injecting them into the afflicted
+                                area. It
+                                should be said that this type of stem cell therapy is currently not FDA approved and
+                                clinics
+                                performing it illegally in the US or in other countries perform various versions of the
+                                procedure to treat illnesses and injuries with little to no clinical evidence.
+                            </span>
+                            <span>
+                                At InGeneron we use the term “regenerative cell therapy” since there are many different
+                                cell
+                                types and regenerative properties collected and used by our therapy along with adult
+                                stem
+                                cells. Importantly we do not treat patients outside of our approved clinical trials and
+                                we
+                                are dedicated to securing FDA approval through rigorous clinical testing.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="questions__item">
+                        <h3 class="questions__h3">
+                            Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                        </h3>
+                        <p class="questions__desc">
+                            <span>
+                                Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a
+                                variety
+                                of different medical therapies that utilize stem cells in some form to treat a patient.
+                                Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP)
+                                injections.
+                                The term is also used to refer to stem cell transplants, also known as bone marrow
+                                transplants.
+                            </span>
+                            <span>
+                                Most commonly “stem cell therapy” is used to describe a procedure where the patient’s
+                                adult
+                                stem cells and other potentially regenerative cells are harvested from a tissue sample
+                                of
+                                either fat or bone marrow taken from the patient. These concentrated regenerative cells
+                                are
+                                then used to treat specific injuries typically by injecting them into the afflicted
+                                area. It
+                                should be said that this type of stem cell therapy is currently not FDA approved and
+                                clinics
+                                performing it illegally in the US or in other countries perform various versions of the
+                                procedure to treat illnesses and injuries with little to no clinical evidence.
+                            </span>
+                            <span>
+                                At InGeneron we use the term “regenerative cell therapy” since there are many different
+                                cell
+                                types and regenerative properties collected and used by our therapy along with adult
+                                stem
+                                cells. Importantly we do not treat patients outside of our approved clinical trials and
+                                we
+                                are dedicated to securing FDA approval through rigorous clinical testing.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="questions__item">
+                        <h3 class="questions__h3">
+                            Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                        </h3>
+                        <p class="questions__desc">
+                            <span>
+                                Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a
+                                variety
+                                of different medical therapies that utilize stem cells in some form to treat a patient.
+                                Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP)
+                                injections.
+                                The term is also used to refer to stem cell transplants, also known as bone marrow
+                                transplants.
+                            </span>
+                            <span>
+                                Most commonly “stem cell therapy” is used to describe a procedure where the patient’s
+                                adult
+                                stem cells and other potentially regenerative cells are harvested from a tissue sample
+                                of
+                                either fat or bone marrow taken from the patient. These concentrated regenerative cells
+                                are
+                                then used to treat specific injuries typically by injecting them into the afflicted
+                                area. It
+                                should be said that this type of stem cell therapy is currently not FDA approved and
+                                clinics
+                                performing it illegally in the US or in other countries perform various versions of the
+                                procedure to treat illnesses and injuries with little to no clinical evidence.
+                            </span>
+                            <span>
+                                At InGeneron we use the term “regenerative cell therapy” since there are many different
+                                cell
+                                types and regenerative properties collected and used by our therapy along with adult
+                                stem
+                                cells. Importantly we do not treat patients outside of our approved clinical trials and
+                                we
+                                are dedicated to securing FDA approval through rigorous clinical testing.
+                            </span>
+                        </p>
+                    </li>
+                    <li class="questions__item">
+                        <h3 class="questions__h3">
+                            Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                        </h3>
+                        <p class="questions__desc">
+                            <span>
+                                Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a
+                                variety
+                                of different medical therapies that utilize stem cells in some form to treat a patient.
+                                Sometimes the term is used incorrectly to refer to platelet rich plasma (PRP)
+                                injections.
+                                The term is also used to refer to stem cell transplants, also known as bone marrow
+                                transplants.
+                            </span>
+                            <span>
+                                Most commonly “stem cell therapy” is used to describe a procedure where the patient’s
+                                adult
+                                stem cells and other potentially regenerative cells are harvested from a tissue sample
+                                of
+                                either fat or bone marrow taken from the patient. These concentrated regenerative cells
+                                are
+                                then used to treat specific injuries typically by injecting them into the afflicted
+                                area. It
+                                should be said that this type of stem cell therapy is currently not FDA approved and
+                                clinics
+                                performing it illegally in the US or in other countries perform various versions of the
+                                procedure to treat illnesses and injuries with little to no clinical evidence.
+                            </span>
+                            <span>
+                                At InGeneron we use the term “regenerative cell therapy” since there are many different
+                                cell
+                                types and regenerative properties collected and used by our therapy along with adult
+                                stem
+                                cells. Importantly we do not treat patients outside of our approved clinical trials and
+                                we
+                                are dedicated to securing FDA approval through rigorous clinical testing.
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__content">
+            <a class="footer__logo" href="">
+                <svg class="footer__logo-svg">
+                    <use xlink:href="./img/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            Производители
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            Для кого мы работаем
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="footer__button" type="submit">
+                Оставить заявку
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html>
