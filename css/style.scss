@@ -541,6 +541,10 @@ input {
         @media (max-width:1024px) {
             width: calc((100% - 2*20px)/3);
         }
+
+        @media (max-width:768px) {
+            width: calc((100% - 20px)/2);
+        }
     }
 
     &-article {
@@ -750,7 +754,8 @@ input {
         }
 
         @media (max-width:1200px) {
-            grid-template-rows: repeat(2, 230px);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 230px);
             font-size: 15px;
         }
     }
@@ -836,6 +841,10 @@ input {
             background: url('../img/scheme-4-bg.png') no-repeat center center transparent;
             background-size: contain;
         }
+
+        @media (max-width:1200px) {
+            order: 4;
+        }
     }
 
     &__item:nth-child(5) {
@@ -857,6 +866,10 @@ input {
             left: -4px;
             background: url('../img/scheme-6-bg.png') no-repeat center center transparent;
             background-size: contain;
+        }
+
+        @media (max-width:1200px) {
+            order: 6;
         }
     }
 
