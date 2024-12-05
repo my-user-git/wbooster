@@ -18,13 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerGroup: 1,
 
         breakpoints: {
-            480: {
+            576: {
                 slidesPerView: 2,
-                grid: {
-                    rows: 3,
-                },
-                spaceBetween: 32,
-                slidesPerGroup: 2
+                spaceBetween: 15,
+            },
+
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 15,
             },
 
             1024: {

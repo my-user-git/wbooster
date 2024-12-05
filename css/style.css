@@ -762,7 +762,7 @@ input {
 @media (max-width: 1300px) {
   .swiper-buttons {
     top: -65px;
-    width: 10%;
+    width: 100px;
     right: 0;
     left: initial;
     transform: none;
