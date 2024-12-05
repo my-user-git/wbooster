@@ -904,6 +904,12 @@ input {
   background: url("../img/scheme-1-bg.png") no-repeat center center transparent;
   background-size: contain;
 }
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(1)::after {
+    left: -26px;
+    right: -30px;
+  }
+}
 .scheme__item:nth-child(2)::after {
   position: absolute;
   content: "";
