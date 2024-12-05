@@ -26,6 +26,10 @@ body {
         left: 0;
         background: url('../img/top-bg.png') no-repeat center top transparent;
         z-index: 1;
+
+        @media (max-width:1024px) {
+            background: url('../img/top-bg.png') no-repeat center -90px transparent;
+        }
     }
 }
 
@@ -77,6 +81,11 @@ input {
     margin: 0 auto;
     padding: 0 50px;
     z-index: 10;
+
+
+    @media (max-width:1024px) {
+        padding: 0 25px;
+    }
 }
 
 /* header */
@@ -132,6 +141,10 @@ input {
         align-items: center;
         justify-content: space-between;
         column-gap: 39px;
+
+        @media (max-width:992px) {
+            column-gap: 20px;
+        }
     }
 
     &__link {
@@ -185,6 +198,10 @@ input {
 
 .main {
     padding-top: 81px;
+
+    @media (max-width:1024px) {
+        padding-top: 40px;
+    }
 }
 
 /* hero */
@@ -220,9 +237,16 @@ input {
         color: var(--white);
         text-transform: uppercase;
 
-
         @media (max-width:1300px) {
             font-size: 60px;
+        }
+
+        @media (max-width:1024px) {
+            font-size: 50px;
+        }
+
+        @media (max-width:992px) {
+            font-size: 45px;
         }
 
         & span:nth-child(1) {
@@ -233,6 +257,14 @@ input {
             @media (max-width:1300px) {
                 font-size: 50px;
             }
+
+            @media (max-width:1024px) {
+                font-size: 40px;
+            }
+
+            @media (max-width:992px) {
+                font-size: 45px;
+            }
         }
 
         & span:nth-child(2) {
@@ -241,6 +273,14 @@ input {
 
             @media (max-width:1300px) {
                 font-size: 55px;
+            }
+
+            @media (max-width:1024px) {
+                font-size: 45px;
+            }
+
+            @media (max-width:992px) {
+                font-size: 40px;
             }
         }
     }
@@ -298,6 +338,14 @@ input {
             row-gap: 5px;
             padding: 31px 40px 36px 40px;
             background-color: var(--white);
+
+            @media (max-width:1024px) {
+                padding: 25px 20px 20px 25px;
+            }
+
+            @media (max-width:992px) {
+                padding: 15px 15px 15px 20px;
+            }
         }
 
         &__legend {
@@ -316,6 +364,15 @@ input {
             @media (max-width:1300px) {
                 font-size: 20px;
             }
+
+            @media (max-width:1024px) {
+                font-size: 18px;
+                padding: 36px 30px 6px 30px;
+            }
+
+            @media (max-width:992px) {
+                padding: 20px 15px 6px 15px;
+            }
         }
 
         &__label {
@@ -333,12 +390,20 @@ input {
             background-color: var(--grey-ff);
             box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
 
+            @media (max-width:992px) {
+                padding: 15px 15px 16px 15px;
+            }
+
             &::placeholder {
                 font-family: var(--font-FuturaBookCRegular), var(--font-standart);
                 line-height: 129%;
                 font-size: 20px;
                 font-weight: 400;
                 color: var(--grey-c4);
+
+                @media (max-width:992px) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -357,6 +422,13 @@ input {
             background-color: var(--orange-00);
             border-radius: 10px;
             transition: background ease-in-out .5s;
+
+            @media (max-width:992px) {
+                margin-top: 20px;
+                margin-bottom: 15px;
+                padding: 15px 0 15px 0;
+                font-size: 16px;
+            }
 
             &:hover,
             &:focus {
@@ -379,6 +451,7 @@ input {
         &__svg {
             width: 16px;
             height: 16px;
+            overflow: visible;
         }
     }
 }
