@@ -248,6 +248,12 @@ input {
          column-gap: 20px;
   }
 }
+@media (max-width: 768px) {
+  .header__list {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
 .header__link {
   font-family: var(--font-FuturaLightCRegular), var(--font-standart);
   line-height: 123%;
@@ -317,6 +323,12 @@ input {
   -moz-column-gap: 53px;
        column-gap: 53px;
 }
+@media (max-width: 768px) {
+  .hero__content {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
 .hero__h1 {
   grid-area: h1;
   display: flex;
@@ -344,6 +356,11 @@ input {
     font-size: 45px;
   }
 }
+@media (max-width: 768px) {
+  .hero__h1 {
+    font-size: 40px;
+  }
+}
 .hero__h1 span:nth-child(1) {
   font-size: 56px;
   color: var(--blue-f7);
@@ -364,6 +381,11 @@ input {
     font-size: 45px;
   }
 }
+@media (max-width: 768px) {
+  .hero__h1 span:nth-child(1) {
+    font-size: 40px;
+  }
+}
 .hero__h1 span:nth-child(2) {
   line-height: 123%;
   font-size: 61px;
@@ -381,6 +403,11 @@ input {
 @media (max-width: 992px) {
   .hero__h1 span:nth-child(2) {
     font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__h1 span:nth-child(2) {
+    font-size: 35px;
   }
 }
 .hero__desc {
@@ -470,6 +497,11 @@ input {
 @media (max-width: 992px) {
   .hero-form__legend {
     padding: 20px 15px 6px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-form__legend {
+    font-size: 15px;
   }
 }
 .hero-form__label {
@@ -603,8 +635,18 @@ input {
   flex-wrap: wrap;
   gap: 43px;
 }
+@media (max-width: 1024px) {
+  .profitably__list {
+    gap: 20px;
+  }
+}
 .profitably__item {
   width: calc((100% - 86px) / 3);
+}
+@media (max-width: 1024px) {
+  .profitably__item {
+    width: calc((100% - 40px) / 3);
+  }
 }
 .profitably-article {
   display: flex;
@@ -617,12 +659,23 @@ input {
   box-shadow: 0 4px 30px 0 rgba(9, 38, 192, 0.05);
   background: url("../img/profitably-bg-card.png") no-repeat right bottom var(--white);
 }
+@media (max-width: 992px) {
+  .profitably-article {
+    padding: 30px 20px 40px 20px;
+  }
+}
 .profitably-article__svg {
   width: 157px;
   height: 163px;
   margin-bottom: 39px;
 }
+@media (max-width: 992px) {
+  .profitably-article__svg {
+    margin-bottom: 20px;
+  }
+}
 .profitably-article__h3 {
+  text-align: center;
   margin-bottom: 14px;
   font-family: var(--font-FuturaFuturisCBold), var(--font-standart);
   line-height: normal;

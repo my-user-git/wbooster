@@ -145,6 +145,10 @@ input {
         @media (max-width:992px) {
             column-gap: 20px;
         }
+
+        @media (max-width:768px) {
+            column-gap: 15px;
+        }
     }
 
     &__link {
@@ -223,6 +227,10 @@ input {
         grid-template-columns: 1fr minmax(auto, 29.6875%);
         grid-template-rows: auto;
         column-gap: 53px;
+
+        @media (max-width:768px) {
+            column-gap: 25px;
+        }
     }
 
     &__h1 {
@@ -249,6 +257,10 @@ input {
             font-size: 45px;
         }
 
+        @media (max-width:768px) {
+            font-size: 40px;
+        }
+
         & span:nth-child(1) {
             font-size: 56px;
             color: var(--blue-f7);
@@ -264,6 +276,10 @@ input {
 
             @media (max-width:992px) {
                 font-size: 45px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 40px;
             }
         }
 
@@ -281,6 +297,10 @@ input {
 
             @media (max-width:992px) {
                 font-size: 40px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 35px;
             }
         }
     }
@@ -372,6 +392,10 @@ input {
 
             @media (max-width:992px) {
                 padding: 20px 15px 6px 15px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 15px;
             }
         }
 
@@ -505,10 +529,18 @@ input {
         display: flex;
         flex-wrap: wrap;
         gap: 43px;
+
+        @media (max-width:1024px) {
+            gap: 20px;
+        }
     }
 
     &__item {
         width: calc((100% - 2*43px)/3);
+
+        @media (max-width:1024px) {
+            width: calc((100% - 2*20px)/3);
+        }
     }
 
     &-article {
@@ -517,19 +549,27 @@ input {
         align-items: center;
         justify-content: center;
         height: 100%;
-
         padding: 40px 32px 61px 32px;
         border-radius: 10px;
         box-shadow: 0 4px 30px 0 rgba(9, 38, 192, 0.05);
         background: url('../img/profitably-bg-card.png') no-repeat right bottom var(--white);
 
+        @media (max-width:992px) {
+            padding: 30px 20px 40px 20px;
+        }
+
         &__svg {
             width: 157px;
             height: 163px;
             margin-bottom: 39px;
+
+            @media (max-width:992px) {
+                margin-bottom: 20px;
+            }
         }
 
         &__h3 {
+            text-align: center;
             margin-bottom: 14px;
             font-family: var(--font-FuturaFuturisCBold), var(--font-standart);
             line-height: normal;
