@@ -754,9 +754,8 @@ input {
         }
 
         @media (max-width:1200px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 230px);
-            font-size: 15px;
+            grid-template-columns: repeat(2, 407px);
+            grid-template-rows: repeat(3, 268.37px);
         }
     }
 
@@ -823,27 +822,52 @@ input {
         right: -25px;
         background: url('../img/scheme-2-bg.png') no-repeat center center transparent;
         background-size: contain;
+
+        @media (max-width:1200px) {
+            right: -6px;
+            bottom: -31px;
+            background: url('../img/scheme-3-bg.png') no-repeat center center transparent;
+        }
     }
 
-    &__item:nth-child(3) ::after {
-        @include schemeBg;
-        bottom: -29px;
-        background: url('../img/scheme-3-bg.png') no-repeat center center transparent;
-        background-size: contain;
+    &__item:nth-child(3) {
+        @media (max-width:1200px) {
+            order: 4;
+        }
+
+        &::after {
+            @include schemeBg;
+            bottom: -29px;
+            background: url('../img/scheme-3-bg.png') no-repeat center center transparent;
+            background-size: contain;
+
+            @media (max-width:1200px) {
+                right: -6px;
+                bottom: 0;
+                left: -35px;
+                background: url('../img/scheme-4-bg.png') no-repeat right center transparent;
+            }
+        }
     }
 
     &__item:nth-child(4) {
         order: 6;
+
+        @media (max-width:1200px) {
+            order: 3;
+        }
 
         &::after {
             @include schemeBg;
             left: -26px;
             background: url('../img/scheme-4-bg.png') no-repeat center center transparent;
             background-size: contain;
-        }
 
-        @media (max-width:1200px) {
-            order: 4;
+            @media (max-width:1200px) {
+                bottom: -31px;
+                background: url('../img/scheme-3-bg.png') no-repeat center top transparent;
+                transform: scale(-1, 1);
+            }
         }
     }
 
@@ -855,21 +879,33 @@ input {
             left: -26px;
             background: url('../img/scheme-5-bg.png') no-repeat center center transparent;
             background-size: contain;
+
+            @media (max-width:1200px) {
+                order: 5;
+                right: -28px;
+                left: -15px;
+                background: url('../img/scheme-4-bg.png') no-repeat center right transparent;
+                transform: scale(-1, 1);
+            }
         }
     }
 
     &__item:nth-child(6) {
         order: 4;
 
+        @media (max-width:1200px) {
+            order: 6;
+        }
+
         &::after {
             @include schemeBg;
             left: -4px;
             background: url('../img/scheme-6-bg.png') no-repeat center center transparent;
             background-size: contain;
-        }
 
-        @media (max-width:1200px) {
-            order: 6;
+            @media (max-width:1200px) {
+                background: url('../img/scheme-3-bg.png') no-repeat center top transparent;
+            }
         }
     }
 

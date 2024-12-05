@@ -841,9 +841,8 @@ input {
 }
 @media (max-width: 1200px) {
   .scheme__list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 230px);
-    font-size: 15px;
+    grid-template-columns: repeat(2, 407px);
+    grid-template-rows: repeat(3, 268.37px);
   }
 }
 .scheme__item {
@@ -917,7 +916,19 @@ input {
   background: url("../img/scheme-2-bg.png") no-repeat center center transparent;
   background-size: contain;
 }
-.scheme__item:nth-child(3) ::after {
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(2)::after {
+    right: -6px;
+    bottom: -31px;
+    background: url("../img/scheme-3-bg.png") no-repeat center center transparent;
+  }
+}
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(3) {
+    order: 4;
+  }
+}
+.scheme__item:nth-child(3)::after {
   position: absolute;
   content: "";
   top: 0;
@@ -929,8 +940,21 @@ input {
   background: url("../img/scheme-3-bg.png") no-repeat center center transparent;
   background-size: contain;
 }
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(3)::after {
+    right: -6px;
+    bottom: 0;
+    left: -35px;
+    background: url("../img/scheme-4-bg.png") no-repeat right center transparent;
+  }
+}
 .scheme__item:nth-child(4) {
   order: 6;
+}
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(4) {
+    order: 3;
+  }
 }
 .scheme__item:nth-child(4)::after {
   position: absolute;
@@ -945,8 +969,10 @@ input {
   background-size: contain;
 }
 @media (max-width: 1200px) {
-  .scheme__item:nth-child(4) {
-    order: 4;
+  .scheme__item:nth-child(4)::after {
+    bottom: -31px;
+    background: url("../img/scheme-3-bg.png") no-repeat center top transparent;
+    transform: scale(-1, 1);
   }
 }
 .scheme__item:nth-child(5) {
@@ -964,8 +990,22 @@ input {
   background: url("../img/scheme-5-bg.png") no-repeat center center transparent;
   background-size: contain;
 }
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(5)::after {
+    order: 5;
+    right: -28px;
+    left: -15px;
+    background: url("../img/scheme-4-bg.png") no-repeat center right transparent;
+    transform: scale(-1, 1);
+  }
+}
 .scheme__item:nth-child(6) {
   order: 4;
+}
+@media (max-width: 1200px) {
+  .scheme__item:nth-child(6) {
+    order: 6;
+  }
 }
 .scheme__item:nth-child(6)::after {
   position: absolute;
@@ -980,8 +1020,8 @@ input {
   background-size: contain;
 }
 @media (max-width: 1200px) {
-  .scheme__item:nth-child(6) {
-    order: 6;
+  .scheme__item:nth-child(6)::after {
+    background: url("../img/scheme-3-bg.png") no-repeat center top transparent;
   }
 }
 .scheme__button {
