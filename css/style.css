@@ -336,79 +336,19 @@ input {
   align-items: flex-start;
   font-family: var(--font-FuturaFuturisCRegular), var(--font-standart);
   line-height: 100%;
-  font-size: 69px;
+  font-size: clamp(40px, 5vw, 69px);
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
 }
-@media (max-width: 1300px) {
-  .hero__h1 {
-    font-size: 60px;
-  }
-}
-@media (max-width: 1024px) {
-  .hero__h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 992px) {
-  .hero__h1 {
-    font-size: 45px;
-  }
-}
-@media (max-width: 768px) {
-  .hero__h1 {
-    font-size: 40px;
-  }
-}
 .hero__h1 span:nth-child(1) {
-  font-size: 56px;
+  font-size: clamp(30px, 5vw, 56px);
   color: var(--blue-f7);
   text-transform: lowercase;
 }
-@media (max-width: 1300px) {
-  .hero__h1 span:nth-child(1) {
-    font-size: 50px;
-  }
-}
-@media (max-width: 1024px) {
-  .hero__h1 span:nth-child(1) {
-    font-size: 40px;
-  }
-}
-@media (max-width: 992px) {
-  .hero__h1 span:nth-child(1) {
-    font-size: 45px;
-  }
-}
-@media (max-width: 768px) {
-  .hero__h1 span:nth-child(1) {
-    font-size: 40px;
-  }
-}
 .hero__h1 span:nth-child(2) {
   line-height: 123%;
-  font-size: 61px;
-}
-@media (max-width: 1300px) {
-  .hero__h1 span:nth-child(2) {
-    font-size: 55px;
-  }
-}
-@media (max-width: 1024px) {
-  .hero__h1 span:nth-child(2) {
-    font-size: 45px;
-  }
-}
-@media (max-width: 992px) {
-  .hero__h1 span:nth-child(2) {
-    font-size: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .hero__h1 span:nth-child(2) {
-    font-size: 35px;
-  }
+  font-size: clamp(35px, 5vw, 61px);
 }
 .hero__desc {
   grid-area: desc;
@@ -476,7 +416,7 @@ input {
   padding: 36px 60px 6px 60px;
   font-family: var(--font-FuturaFuturisCBold), var(--font-standart);
   line-height: normal;
-  font-size: 23px;
+  font-size: clamp(15px, 2vw, 23px);
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
@@ -485,23 +425,12 @@ input {
 }
 @media (max-width: 1300px) {
   .hero-form__legend {
-    font-size: 20px;
-  }
-}
-@media (max-width: 1024px) {
-  .hero-form__legend {
-    font-size: 18px;
     padding: 36px 30px 6px 30px;
   }
 }
 @media (max-width: 992px) {
   .hero-form__legend {
     padding: 20px 15px 6px 15px;
-  }
-}
-@media (max-width: 768px) {
-  .hero-form__legend {
-    font-size: 15px;
   }
 }
 .hero-form__label {
@@ -553,7 +482,8 @@ input {
   padding: 19px 0 19px 0;
   font-family: var(--font-FuturaBookCRegular), var(--font-standart);
   line-height: 106%;
-  font-size: 18px;
+  padding: 36px 30px 6px 30px;
+  font-size: clamp(16px, 2vw, 18px);
   font-weight: 400;
   color: var(--white);
   text-transform: uppercase;
@@ -566,7 +496,6 @@ input {
     margin-top: 20px;
     margin-bottom: 15px;
     padding: 15px 0 15px 0;
-    font-size: 16px;
   }
 }
 .hero-form__button:hover, .hero-form__button:focus {
@@ -692,7 +621,7 @@ input {
   text-align: center;
   font-family: var(--font-FuturaBookCRegular), var(--font-standart);
   line-height: 110%;
-  font-size: 20px;
+  font-size: clamp(18px, 2vw, 20px);
   font-weight: 400;
   color: var(--grey-55);
 }
@@ -869,13 +798,12 @@ input {
   margin-bottom: 10px;
   font-family: var(--font-FuturaFuturisCBold), var(--font-standart);
   line-height: 139%;
-  font-size: 18px;
+  font-size: clamp(15px, 1.2vw, 18px);
   font-weight: 700;
   color: var(--white);
 }
 @media (max-width: 1300px) {
   .scheme-article__h3 {
-    font-size: 16px;
     font-weight: 400;
   }
 }
